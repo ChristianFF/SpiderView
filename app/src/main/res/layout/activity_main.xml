@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,10 +16,55 @@
     <com.ff.library.SpiderView
         android:id="@+id/spiderView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_weight="9"
         app:angleCount="7"
         app:hierarchyCount="7"
         app:lineColor="@color/colorPrimaryDark"
         app:maxValue="100"
         app:overlayColor="@color/colorAccent"/>
-</RelativeLayout>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

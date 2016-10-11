@@ -379,6 +379,20 @@ public class SpiderView extends View {
         postInvalidate();
     }
 
+    /**
+     * 设置蛛网图某一角的值
+     *
+     * @param value
+     * @param index start from 0
+     */
+    public void setValueAtIndex(float value, int index) {
+        if (index < 0 || index > mAngleCount) {
+            return;
+        }
+        mValues[index] = value;
+        postInvalidate();
+    }
+
     public void setValues(float[] values) {
         if (values == null || values.length <= 0) {
             throw new IllegalArgumentException("Values cannot be null or empty!");
